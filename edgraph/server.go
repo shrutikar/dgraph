@@ -568,6 +568,7 @@ func (s *Server) doQuery(ctx context.Context, req *api.Request) (resp *api.Respo
 	if ctx.Err() != nil {
 		return nil, ctx.Err()
 	}
+
 	startTime := time.Now()
 
 	var measurements []ostats.Measurement
